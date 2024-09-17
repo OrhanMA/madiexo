@@ -1,0 +1,19 @@
+symfony serve
+
+symfony composer require api
+
+php bin/console doctrine:database:create
+
+symfony console make:user
+
+symfony console make:migration --formatted
+symfony console doctrine:migration:migrate
+
+
+symfony console make:entity 
+symfony console make:entity --api-resource
+
+symfony composer require lexik/jwt-authentication-bundle
+
+php bin/console lexik:jwt:generate-keypair
+
