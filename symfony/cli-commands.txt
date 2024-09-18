@@ -17,3 +17,5 @@ symfony composer require lexik/jwt-authentication-bundle
 
 php bin/console lexik:jwt:generate-keypair
 
+
+composer require --dev orm-fixtures
